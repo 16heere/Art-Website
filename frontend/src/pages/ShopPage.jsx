@@ -6,6 +6,7 @@ import "../styles/shop.css";
 const Shop = () => {
     const [products, setProducts] = useState([]);
 
+    //cp,,emt
     useEffect(() => {
         const fetchProducts = async () => {
             const response = await axios.get(
