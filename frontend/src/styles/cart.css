@@ -1,0 +1,211 @@
+.cart-page-container {
+    min-height: 100vh;
+    padding: 3rem;
+    background-color: #222;
+}
+
+.cart-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+.cart-container h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    background: #333;
+    padding: 1rem;
+    border-radius: 10px;
+    gap: 1.5rem;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cart-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart-details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cart-details p {
+    font-size: 1rem;
+    margin: 0.2rem 0;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.quantity-control button {
+    background: #ffcc00;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-control button:hover {
+    background: #e6b800;
+}
+
+.quantity-control span {
+    background: #444;
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #777;
+    width: 50px;
+    color: white;
+}
+
+.quantity-control span:focus {
+    outline: none;
+    background: #555;
+    border-color: #ffcc00;
+}
+
+/* Make the span editable */
+.quantity-control span[contenteditable="true"] {
+    min-width: 50px;
+    display: inline-block;
+}
+
+/* Remove Button */
+.remove-button {
+    background: transparent;
+    border: none;
+    color: #ff4444;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.5rem;
+}
+
+.remove-button:hover {
+    color: #cc0000;
+    text-decoration: underline;
+}
+
+.checkout-button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.checkout-button:hover {
+    background: #e6b800;
+}
+
+.customer-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.customer-info label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.customer-info input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    background: #444;
+    color: white;
+}
+
+.suggestions {
+    list-style: none;
+    background: #444;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.suggestions li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.suggestions li:hover {
+    background: #555;
+}
+
+@media (max-width: 768px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cart-details {
+        width: 100%;
+    }
+
+    .quantity-control,
+    .remove-button {
+        justify-content: center;
+    }
+}

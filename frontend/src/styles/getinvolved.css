@@ -1,0 +1,41 @@
+.get-involved {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: #444;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.get-involved h2 {
+    color: #ffcc00;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.get-involved p {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.get-involved ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.get-involved li {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 0.8rem;
+}
+
+.get-involved strong {
+    color: #ffcc00;
+}
+
+@media (max-width: 768px) {
+    .get-involved {
+        padding: 1.5rem;
+    }
+}

@@ -1,0 +1,175 @@
+.shop-container {
+    padding: 50px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+}
+
+.shop-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: #333;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-image {
+    width: 500px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.hero-text {
+    max-width: 600px;
+    text-align: left;
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.get-involved-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: #ffcc00;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.get-involved-button:hover {
+    background: #e6b800;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.product-card {
+    background: #333;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.product-card p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.view-button,
+.zazzle-button {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.view-button {
+    background: #ffcc00;
+    color: #333;
+}
+
+.view-button:hover {
+    background: #e6b800;
+}
+
+.zazzle-button {
+    background: #ff6600;
+    color: white;
+}
+
+.zazzle-button:hover {
+    background: #cc5200;
+}
+
+@media (max-width: 1024px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-container {
+        padding: 30px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .shop-container {
+        padding: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
