@@ -32,7 +32,19 @@ const GetInvolved = () => {
                 </li>
                 <li>
                     <strong>Donate to NAMI USA:</strong> Help fund critical
-                    programs for individuals and families in the US.
+                    programs for individuals and families in the US through
+                    their{" "}
+                    <a
+                        href="https://www.nami.org/get-involved/donate-to-nami/"
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{
+                            textDecoration: "none",
+                            color: "#66c2ff",
+                        }}
+                    >
+                        Donation page
+                    </a>
                 </li>
             </ul>
             <p>
