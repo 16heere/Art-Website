@@ -10,7 +10,7 @@ const nodemailer = require("nodemailer");
 const app = express();
 
 const corsOptions = {
-    origin: [process.env.CLIENT_URL],
+    origin: ["https://famous-zuccutto-5d4d66.netlify.app/"],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
