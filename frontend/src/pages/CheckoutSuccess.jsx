@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { useCart } from "../context/cartContext";
 import "../styles/checkoutsuccess.css"; // Ensure you link this CSS file
 
 const CheckoutSuccess = () => {
+    const { clearCart } = useCart();
     const navigate = useNavigate();
     const [dots, setDots] = useState("");
 
@@ -52,6 +54,7 @@ const CheckoutSuccess = () => {
 
         // ✅ Redirect to shop after 5 seconds
         const timer = setTimeout(() => {
+            clearCart();
             navigate("/");
         }, 5000);
 
