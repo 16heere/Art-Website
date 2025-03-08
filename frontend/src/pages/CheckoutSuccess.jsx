@@ -62,7 +62,7 @@ const CheckoutSuccess = () => {
             clearTimeout(timer);
             clearInterval(dotsInterval);
         };
-    }, [navigate]);
+    }, [navigate, clearCart]);
 
     return (
         <div className="checkout-success-container">
