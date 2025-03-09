@@ -47,8 +47,6 @@ const CheckoutSuccess = () => {
             sessionStorage.removeItem("orderDetails");
         }
 
-        clearCart();
-
         // ✅ Animate dots in the "Redirecting" message
         const dotsInterval = setInterval(() => {
             setDots((prevDots) => (prevDots.length < 3 ? prevDots + "." : ""));
