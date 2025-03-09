@@ -5,8 +5,8 @@ import { useCart } from "../context/cartContext";
 import "../styles/checkoutsuccess.css"; // Ensure you link this CSS file
 
 const CheckoutSuccess = () => {
-    const { clearCart } = useCart();
     const navigate = useNavigate();
+    const { clearCart } = useCart();
     const [dots, setDots] = useState("");
 
     useEffect(() => {
@@ -46,6 +46,8 @@ const CheckoutSuccess = () => {
             // ✅ Clear sessionStorage after sending emails
             sessionStorage.removeItem("orderDetails");
         }
+
+        clearCart();
 
         // ✅ Animate dots in the "Redirecting" message
         const dotsInterval = setInterval(() => {
